@@ -1,0 +1,32 @@
+<div class="card text-center" style="width: 20rem; height: 32rem;">
+      <img class="img-fluid"
+          [src]=[imgProduct] 
+          class="card-img-top" 
+          alt="product"
+      >
+    <div class="card-body">
+      <h5 class="card-title">{{productName}}</h5>
+      <button 
+        class="btn btn-primary" 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasWithBothOptions" 
+        aria-controls="offcanvasWithBothOptions">VER MAIS</button>
+      <div class="offcanvas offcanvas-start" 
+          data-bs-scroll="true" tabindex="-1" 
+          id="offcanvasWithBothOptions" 
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <button type="button" 
+            class="btn-close" 
+            data-bs-dismiss="offcanvas" 
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <app-product-details></app-product-details>
+        </div>
+      </div>
+    </div>
+  </div>
+  

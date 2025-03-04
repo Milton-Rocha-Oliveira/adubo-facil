@@ -1,0 +1,23 @@
+.socia-media-content{
+    background-color: #efefef ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.medias-icons{
+    display: flex;
+    flex-direction: row;
+
+    margin: auto;
+    gap: 2rem;
+}
+
+.footer{
+    margin: auto;
+    padding: 1rem;
+    color: #1D261D ;
+    font-weight: bolder;
+}

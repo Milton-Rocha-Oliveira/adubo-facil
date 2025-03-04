@@ -1,0 +1,87 @@
+.text-component{
+    height: auto;
+    background-color:#1D261D;
+    color: #d9d9d9;
+    text-align: center;
+}
+
+.text{
+    padding: 3.5rem;
+}
+
+.text > h1{
+    font-weight: bold;
+}
+
+.text > p{
+    font-weight: 400;
+}
+
+@media(max-width: 1400px){
+    .text-component{
+        margin-top: 3.5rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .text-component{
+        margin-top: 3.5rem;
+        background-color:#1D261D;
+        color: #d9d9d9;
+    }
+    
+    .text{
+        padding: 2rem;
+    }
+    
+    .text > h1{
+        font-size: 2rem;
+    }
+    
+    .text > p{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media(max-width: 800px){
+    .text-component{
+        margin-top: 5rem;
+    }
+    
+    .text{
+        padding: 1rem;
+    }
+    
+    .text > h1{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .text > p{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }    
+}
+
+@media(max-width:400px){
+    .text-component{
+        margin-top: 4.7rem;
+    }
+    
+    .text{
+        padding: 1rem;
+    }
+    
+    .text > h1{
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    .text > p{
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+       
+}

@@ -1,0 +1,20 @@
+.container-help-and-support{
+   background-color: #efeded;
+   text-align: center;
+   padding: 1rem;
+   margin-top: 0rem;
+   color: #2C3B2D;
+}
+
+.text{
+    padding: 1rem;
+    margin: auto;
+}
+
+.text > h1 {
+    font-weight: bold;
+}
+
+.text > p{
+    font-weight: 600;
+}
