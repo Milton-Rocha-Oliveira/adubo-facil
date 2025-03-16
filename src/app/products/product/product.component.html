@@ -1,32 +1,56 @@
-<div class="card text-center" style="width: 20rem; height: 32rem;">
-      <img class="img-fluid"
-          [src]=[imgProduct] 
-          class="card-img-top" 
-          alt="product"
-      >
-    <div class="card-body">
-      <h5 class="card-title">{{productName}}</h5>
-      <button 
-        class="btn btn-primary" 
-        type="button" 
-        data-bs-toggle="offcanvas" 
-        data-bs-target="#offcanvasWithBothOptions" 
-        aria-controls="offcanvasWithBothOptions">VER MAIS</button>
-      <div class="offcanvas offcanvas-start" 
-          data-bs-scroll="true" tabindex="-1" 
-          id="offcanvasWithBothOptions" 
-          aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-          <button type="button" 
-            class="btn-close" 
-            data-bs-dismiss="offcanvas" 
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <app-product-details></app-product-details>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+<div class="card text-center mb-3" 
+  style="width: 20rem; 
+  height: 32rem; 
+  border: none; 
+  border-radius: 1rem;
+  ">
+  <img [src]="[imgProduct]" class="card-img-top" alt="product">
+  <div class="card-body">
+    <h5 class="card-title">{{productName}}</h5>
+    <button class="btn btn-success" 
+                  type="button" 
+                  data-bs-toggle="offcanvas" 
+                  [attr.data-bs-target]="'#' + productId"
+                  aria-controls="offcanvasWithBothOptions"
+                  style="background-color: #1D261D; 
+                    color: #efefef; 
+                    width: 13rem;
+                    height: 3rem;
+                    border-radius: 3rem;
+                    font-size: large;
+                    font-weight: bolder;
+                    margin-top: 0.5rem;
+                    "
+                  >VER MAIS</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="{{productId}}" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header" >
+                  <button 
+                    type="button" 
+                    class="btn-close" 
+                    data-bs-dismiss="offcanvas" 
+                    aria-label="Close" 
+                    style=" 
+                    justify-content: center;
+                    "></button>
+                </div>
+                <div class="offcanvas-body" 
+                    style="
+                        color: #efefef;
+                        ">
+                    <img [src]="[imgProduct]"
+                        class="card-img-top" 
+                        alt="product" 
+                        style="width: 16rem; margin: auto; margin-top: 1.7rem; "
+                    >
+                  <p style="color: #1D261D;">{{productDetails}}</p>
+                <a href="{{budgetLink}}" class="btn btn-success" 
+                   style="background-color: #1D261D; 
+                   color: #efefef;
+                   border-radius: 2rem;
+                   height: 2.5rem;
+                   "
+                   >ORÇAMENTO</a>
+                </div>
+              </div>
+</div>
+

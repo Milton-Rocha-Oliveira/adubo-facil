@@ -1,4 +1,46 @@
 .content-about-the-company{
+    width: 100%;
     background-color: #efefef;
-    padding: 2rem;
+    color: #212c21 ;
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.text{
+    color: #212c21;
+    gap: 1rem;
+}
+.text > h1{
+    width: 150%;
+    font-size: 4rem;
+    font-weight: 650;
+}
+
+.text > p {
+    margin-top: 3.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+@media(max-width:1200px){
+   .content-about-the-company{
+    flex-wrap: wrap;
+    text-align: center;
+   }
+   .text{
+    margin-top: 0rem;
+    gap: 0rem;
+   }
+   .text > h1{
+    width: 100%;
+    font-size: 1.6rem;
+   }
+   .text > p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+   }
 }
