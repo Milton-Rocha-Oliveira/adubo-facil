@@ -5,16 +5,17 @@
     padding: 4rem;
 
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
    
 }
 
 .text{
     color: #212c21;
     gap: 1rem;
+    text-align: center;
 }
 .text > h1{
-    width: 150%;
+    width: 100%;
     font-size: 4rem;
     font-weight: 650;
 }
@@ -40,7 +41,7 @@
    }
    .text > p{
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
    }
 }
